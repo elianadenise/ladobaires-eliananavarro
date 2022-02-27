@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--SEO-->
+    <meta name="keywords" content="turismo buenos aires, city tour buenos aires, turismo buenos aires argentina, ">
+    <meta name="description"
+        content="LADOBaires es una Agencia de Viajes que te muestra el lado B de Buenos Aires, Argentina.">
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!--fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amarante&family=Poppins&display=swap" rel="stylesheet">
+    <!--JS-->
+    <script src="js/ladob.js"></script>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>LADOBaires | Inicio</title>
+</head>
+
+<body>
+
+    <header>
+        <!--navbar-->
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+                <a href="index.html"><img src="img/logo.svg" alt="LADOBaires" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li>
+                            <a href="index.html" class="linknav">INICIO</a>
+                        </li>
+                        <li>
+                            <a href="#tours" class="linknav">TOURS</a>
+                        </li>
+                        <li>
+                            <a href="#nosotros" class="linknav">NOSOTROS</a>
+                        </li>
+                        <li>
+                            <a href="#contactanos" class="linknav">CONTACTANOS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--banner-->
+        <div class="banner">
+            <h1 class="mb-5">Te mostramos el lado B de Buenos Aires</h1>
+            <a href="html/tours.html" class="btn">¡QUIERO SABER MÁS!</a>
+        </div>
+
+        <!--buscador de tours-->
+        <div id="tours" class="gridCityTours">
+            <h2 class="cityTour">City Tours</h2>
+
+            <div class="card tour1" style="width: 18rem;">
+                <img src="img/city1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="h3Centrado">Misteriosa Buenos Aires</h3>
+                    <p>Te contamos los secretos porteños mejores guardados.</p>
+                    <p>Duración aproximada 5hs.</p>
+                    <ul class="ulmainHabitacion texto2">
+                        <li>Guía de turismo</li>
+                        <li>Transfer</li>
+                    </ul>
+                    <label for="numerodepasajeros" id="numero" class="texto2">Cantidad de pasajeros</label>
+                    <input type="number" id="numero" class="form texto3 mb-3">
+                    <a href="#" class="btn">¡RESERVAR!</a>
+                </div>
+            </div>
+
+            <div class="card tour2" style="width: 18rem;">
+                <img src="img/city2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="h3Centrado">Noche de tango</h3>
+                    <p>¿Querés aprender a bailar tango? En este tour te llevamos a una de las milongas más conocidas de
+                        Buenos Aires.</p>
+                    <p>Duración aproximada 4hs.</p>
+                    <ul class="ulmainHabitacion texto2">
+                        <li>Guía de turismo</li>
+                        <li>Profesor de tango</li>
+                        <li>Entrada a la milonga</li>
+                        <li>Transfer</li>
+                    </ul>
+                    <label for="numerodepasajeros" id="numero" class="texto2">Cantidad de pasajeros</label>
+                    <input type="number" id="numero" class="form texto3 mb-3">
+                    <a href="#" class="btn">¡RESERVAR!</a>
+                </div>
+            </div>
+
+            <div class="card tour3" style="width: 18rem;">
+                <img src="img/city3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="h3Centrado">Arquitectura porteña</h3>
+                    <p>Desde casas coloniales hasta Clorindo Testa.</p>
+                    <p>Duración aproximada 6hs.</p>
+                    <ul class="ulmainHabitacion texto2">
+                        <li>Guía de turismo</li>
+                        <li>Transfer</li>
+                    </ul>
+                    <label for="numerodepasajeros" id="numero" class="texto2">Cantidad de pasajeros</label>
+                    <input type="number" id="numero" class="form texto3 mb-3">
+                    <a href="#" class="btn">¡RESERVAR!</a>
+                </div>
+            </div>
+
+            <div class="card tour4" style="width: 18rem;">
+                <img src="img/city4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="h3Centrado">Arte urbano</h3>
+                    <p>Te llevamos a los distritos artísticos de Buenos Aires</p>
+                    <p>Duración aproximada 6hs.</p>
+                    <ul class="ulmainHabitacion texto2">
+                        <li>Guía de turismo</li>
+                        <li>Transfer</li>
+                    </ul>
+                    <label for="numerodepasajeros" id="numero" class="texto2">Cantidad de pasajeros</label>
+                    <input type="number" id="numero" class="form texto3 mb-3">
+                    <a href="#" class="btn">¡RESERVAR!</a>
+                </div>
+            </div>
+
+            <div class="card tour5" style="width: 18rem;">
+                <img src="img/city5.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="h3Centrado">Tango en la calle</h3>
+                    <p>¿Querés aprender a bailar tango? En este tour te llevamos a una de las milongas más conocidas de
+                        Buenos Aires.</p>
+                    <p>Duración aproximada 4hs.</p>
+                    <ul class="ulmainHabitacion texto2">
+                        <li>Guía de turismo</li>
+                        <li>Profesor de tango</li>
+                        <li>Entrada a la milonga</li>
+                        <li>Transfer</li>
+                    </ul>
+                    <label for="numerodepasajeros" id="numero" class="texto2">Cantidad de pasajeros</label>
+                    <input type="number" id="numero" class="form texto3 mb-3">
+                    <a href="#" class="btn">¡RESERVAR!</a>
+                </div>
+            </div>
+
+            <div class="card tour6" style="width: 18rem;">
+                <img src="img/city6.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="h3Centrado">Subterráneo</h3>
+                    <p>La red de subterráneos porteños cuenta con estaciones llenas de arte, en este tour te las
+                        mostramos
+                    </p>
+                    <p>Duración aproximada 3hs.</p>
+                    <ul class="ulmainHabitacion texto2">
+                        <li>Guía de turismo</li>
+                        <li>Pasajes del subterráneo</li>
+                        <li>Transfer</li>
+                    </ul>
+                    <label for="numerodepasajeros" id="numero" class="texto2">Cantidad de pasajeros</label>
+                    <input type="number" id="numero" class="form texto3 mb-3">
+                    <a href="#" class="btn">¡RESERVAR!</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!--nosotros-->
+        <div id="nosotros" class="nosotros">
+            <h2>Nosotros</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quisquam culpa, maiores modi incidunt
+                ullam. Sit sunt corporis eius iste eveniet magnam deleniti eum cupiditate, doloribus accusantium
+                atque
+                harum doloremque!</p>
+        </div>
+
+        <!--contactanos-->
+        <div id="contactanos" class="contactanos">
+
+            <div class="formulario">
+                <h2>Contactanos</h2>
+
+                <label for="text" id="Nombre" class="texto2 mb-1">Nombre y apellido</label>
+                <input type="text" placeholder="Ingresá tu nombre" id="Nombre" class="form texto3 mb-3">
+
+                <label for="text" id="correo" class="texto2 mb-1">Correo Electrónico</label>
+                <input type="text" placeholder="ejemplo@ejemplo.com" id="correo" class="form texto3 mb-3">
+
+                <label for="tipodehabitación" id="select" class="texto2 mb-1">Asunto</label>
+                <select name="select" class="mb-3 texto3">
+                    <option value="select">Seleccionar</option>
+                    <option value="Privado">City tour privado</option>
+                    <option value="Grupal">City tour grupal</option>
+                    <option value="Otro">Otro</option>
+                </select>
+
+                <label for="exampleFormControlTextarea1" class="texto2 mb-1">Comentario</label>
+                <textarea cols="70" rows="5" class="mb-3 texto3"></textarea>
+
+                <div class="radios mb-3">
+                    <label for="text" id="correo" class="texto2">¿Querés subscribirte para recibir descuentros
+                        exclusivos?</label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="option1">
+                        <label class="form-check-label texto3" for="inlineRadio1">Sí, quiero</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="option2">
+                        <label class="form-check-label texto3" for="inlineRadio2">En otro momento</label>
+                    </div>
+                </div>
+
+                <input type="submit" class="btn" value="¡enviar!">
+            </div>
+
+            <div class="datos">
+                <p>Buenos Aires, Argentina.</p>
+                <p>Tel.: 4444 2222</p>
+                <p>hola@ladobaires.com</p>
+            </div>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210146.68168877432!2d-58.573383207134555!3d-34.615743688997895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses!2sar!4v1645738807069!5m2!1ses!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="mapa"></iframe>
+
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div>
+            <p>Suscríbete para recibir descuentos exclusivos</p>
+            <input type="text" placeholder="ejemplo@ejemplo.com" id="correo" class="form texto3 mb-3">
+
+
+        </div>
+        <div class="footerDiv">
+            <!--seccion1-->
+            <div class="divFooter1 m-0">
+                <a href="index.html"><img src="img/logo.svg" alt="Huasi Hosteria" class="huasiLogoFooter"></a>
+
+                <div class="divLinealFooter1"></div>
+
+                <div class="divFooter1div1 textoFooter">
+                    <p class="m-0">Buenos Aires, Argentina.</p>
+                    <p class="m-0">Tel.: 4444-2222 / 15 2345 2345</p>
+                    <p class="m-0">hola@ladobaires.com</p>
+                </div>
+            </div>
+
+            <!--seccion2-->
+            <div class="divFooter2">
+                <a href="index.html" class="textoFooter aFooter">INICIO</a>
+                <a href="#nosotros" class="textoFooter aFooter">NOSOTROS</a>
+                <a href="html/tours.html" class="textoFooter aFooter">TOURS</a>
+                <a href="#contactanos" class="textoFooter aFooter">CONTACTANOS</a>
+
+            </div>
+
+            <!--seccion3-->
+            <div class="divFooter3">
+                <p class="textoFooter m-0">Sigamos conectados</p>
+                <div class="divFooter3div1">
+                    <a href="https://www.instagram.com/"><img src="img/instagram.svg" alt="Instagram"
+                            class="redesSocialesLogo mb-2"></a>
+                    <a href="https://www.facebook.com"><img src="img/facebook.svg" alt="Facebook"
+                            class="redesSocialesLogo facebookLogo mb-2"></a>
+                    <a href="https://www.whatsapp.com/?lang=es"><img src="img/whatsapp.svg" alt="Whatsapp"
+                            class="redesSocialesLogo mb-2"></a>
+                </div>
+
+                <div class="divLinealFooter2"></div>
+
+                <a href="#" class="textoFooter aFooter mt-2">Términos y condiciones</a>
+                <p class="textoFooter m-0">© 2022 LADOBaires. Todos los derechos reservados.</p>
+            </div>
+        </div>
+
+
+
+
+
+    </footer>
+
+
+</body>
+
+</html>

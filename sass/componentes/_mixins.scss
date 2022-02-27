@@ -1,0 +1,25 @@
+@mixin banners($background){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: $background;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@mixin divLineal ($ancho, $alto, $borderTop, $borderLeft, $margin){
+    width: $ancho;
+    height: $alto;
+    border-top: $borderTop;
+    border-left: $borderLeft;
+    border-bottom: 0;
+    border-right: 0;
+    margin: $margin;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    border-color: #000;
+    border-style: solid;
+}

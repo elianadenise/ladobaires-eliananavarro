@@ -1,3 +1,409 @@
 * {
   margin: 0;
   padding: 0; }
+
+body {
+  background-color: #fff; }
+
+/*GENERAL*/
+/*HEADER*/
+header {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  box-shadow: 0 0 0.7vh 0;
+  box-shadow: #2F2A26/20%;
+  z-index: 10; }
+  header .navbar {
+    width: 100%; }
+    header .navbar img {
+      display: flex;
+      padding-left: 7vw;
+      height: 5vh; }
+    header .navbar .collapse {
+      flex-grow: 0; }
+    header .navbar ul {
+      list-style-type: none;
+      font-family: "Poppins", sans-serif;
+      height: 8vh;
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-evenly;
+      padding-right: 7vw; }
+      header .navbar ul li {
+        display: flex;
+        text-decoration: none; }
+        header .navbar ul li a {
+          color: #000;
+          transition: 1s;
+          text-decoration: none;
+          border-bottom: solid 0.3vh transparent;
+          font-weight: 500; }
+          header .navbar ul li a:hover {
+            color: #6768ab;
+            border-bottom: solid 0.3vh #6768ab; }
+          header .navbar ul li a::selection {
+            background-color: #6768ab; }
+
+/*MAIN*/
+/*BANNER*/
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(../img/bannerindex.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 90vh; }
+
+/*CITY TOURS*/
+/*NOSOTROS*/
+.nosotros {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin: 5vh 3vh;
+  height: auto; }
+  .nosotros img {
+    height: 5vh;
+    justify-content: start;
+    align-self: start; }
+  .nosotros p {
+    justify-content: center;
+    align-items: start; }
+
+/*CONTACTO*/
+.contactanos {
+  display: grid;
+  height: 100%;
+  height: 100%;
+  background-image: url(../img/contactanos.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .contactanos img {
+    height: 5vh; }
+  .contactanos .formulario {
+    grid-area: formulario;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center; }
+    .contactanos .formulario textarea, .contactanos .formulario .form, .contactanos .formulario select {
+      border: none;
+      border-bottom: 2px solid #6768ab;
+      background-color: transparent;
+      width: 100%; }
+      .contactanos .formulario textarea:focus, .contactanos .formulario .form:focus, .contactanos .formulario select:focus {
+        outline-color: #6768ab;
+        border-radius: 0.3em; }
+    .contactanos .formulario .form, .contactanos .formulario select {
+      height: 3.5vh; }
+    .contactanos .formulario .radios {
+      display: flex;
+      flex-direction: column; }
+      .contactanos .formulario .radios .form-check-input:checked {
+        background-color: #6768ab;
+        border-color: #6768ab; }
+    .contactanos .formulario .botonLink {
+      text-transform: uppercase; }
+  .contactanos .datos {
+    grid-area: datos; }
+  .contactanos .mapa {
+    grid-area: mapa; }
+
+/*FOOTER*/
+.footerDiv {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center; }
+  .footerDiv .divFooter1 {
+    display: flex;
+    flex-direction: column; }
+    .footerDiv .divFooter1 .divLinealFooter1 {
+      width: 100%;
+      height: 0;
+      border-top: 0.1vh;
+      border-left: 0;
+      border-bottom: 0;
+      border-right: 0;
+      margin: 0.5vh 0;
+      display: flex;
+      align-self: center;
+      justify-self: center;
+      border-color: #000;
+      border-style: solid; }
+    .footerDiv .divFooter1 .divFooter1div1 {
+      display: flex;
+      flex-direction: column; }
+  .footerDiv .divFooter2 {
+    display: flex;
+    flex-direction: column; }
+    .footerDiv .divFooter2 .aFooter {
+      transition: 1s;
+      text-decoration: none;
+      color: #000; }
+      .footerDiv .divFooter2 .aFooter:hover {
+        color: #6768ab; }
+  .footerDiv .divFooter3 {
+    display: flex;
+    flex-direction: column; }
+    .footerDiv .divFooter3 .redesSocialesLogo {
+      height: 2vh; }
+    .footerDiv .divFooter3 .facebookLogo {
+      margin: 0 1.5vw 0 1.5vw; }
+    .footerDiv .divFooter3 .divLinealFooter2 {
+      width: 100%;
+      height: 0;
+      border-top: 0.1vh;
+      border-left: 0;
+      border-bottom: 0;
+      border-right: 0;
+      margin: 0.5vh 0 0 0;
+      display: flex;
+      align-self: center;
+      justify-self: center;
+      border-color: #000;
+      border-style: solid; }
+    .footerDiv .divFooter3 .aFooter {
+      transition: 1s;
+      text-decoration: none;
+      color: #000; }
+      .footerDiv .divFooter3 .aFooter:hover {
+        color: #6768ab; }
+
+/*FUENTES*/
+h1 {
+  font-family: "Amarante", cursive;
+  color: #fff;
+  line-height: 1,5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-shadow: #000 0.1em 0.1em 0.2em;
+  font-weight: 400;
+  text-justify: center;
+  text-align: center; }
+
+h2 {
+  font-family: "Amarante", cursive; }
+
+/*BOTON*/
+.btn {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  background-color: #6768ab;
+  transition: 1s;
+  display: flex;
+  border: 0.1vh solid #6768ab;
+  border-radius: 0.3em;
+  text-transform: uppercase;
+  justify-self: center;
+  align-self: center; }
+  .btn:hover {
+    background-color: #fff;
+    color: #000; }
+  .btn::selection {
+    background-color: #6768ab; }
+
+/*MEDIA QUERY - DESKTOP*/
+@media screen and (min-width: 769px) {
+  /*HEADER + NAV*/
+  header {
+    height: 10vh;
+    position: fixed;
+    flex-direction: row; }
+    header .navbar {
+      width: 100%; }
+      header .navbar .linknav {
+        padding: 0.5vh 0.5vh;
+        font-size: 1em; }
+  /*MAIN*/
+  main {
+    padding-top: 10vh; }
+  /*CITY TOURS*/
+  .gridCityTours {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    row-gap: 0vh;
+    justify-content: space-around;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20vh auto auto;
+    grid-template-areas: "tour tour tour" "tour1 tour2 tour3" "tour4 tour5 tour6"; }
+    .gridCityTours .cityTour {
+      grid-area: tour;
+      text-justify: center;
+      text-align: start;
+      margin: 12vh 0 0 5vh; }
+    .gridCityTours .tour1 {
+      grid-area: tour1;
+      padding: 0 0 2vh 0;
+      margin: 2vh;
+      border: solid 0.1vh #6768ab;
+      border-radius: 0.3em;
+      background-color: #fff;
+      transition: 1s;
+      display: flex;
+      flex-direction: column;
+      justify-self: end; }
+      .gridCityTours .tour1:hover {
+        filter: drop-shadow(0 0.2vh 0.2vh #000); }
+      .gridCityTours .tour1 img {
+        width: 100%;
+        filter: grayscale(100%);
+        transition: 2s; }
+        .gridCityTours .tour1 img:hover {
+          filter: none; }
+    .gridCityTours .tour2 {
+      grid-area: tour2;
+      padding: 0 0 2vh 0;
+      margin: 2vh;
+      border: solid 0.1vh #6768ab;
+      border-radius: 0.3em;
+      background-color: #fff;
+      transition: 1s;
+      display: flex;
+      flex-direction: column;
+      justify-self: center; }
+      .gridCityTours .tour2:hover {
+        filter: drop-shadow(0 0.2vh 0.2vh #000); }
+      .gridCityTours .tour2 img {
+        width: 100%;
+        filter: grayscale(100%);
+        transition: 2s; }
+        .gridCityTours .tour2 img:hover {
+          filter: none; }
+    .gridCityTours .tour3 {
+      grid-area: tour3;
+      padding: 0 0 2vh 0;
+      margin: 2vh;
+      border: solid 0.1vh #6768ab;
+      border-radius: 0.3em;
+      background-color: #fff;
+      transition: 1s;
+      display: flex;
+      flex-direction: column;
+      justify-self: start; }
+      .gridCityTours .tour3:hover {
+        filter: drop-shadow(0 0.2vh 0.2vh #000); }
+      .gridCityTours .tour3 img {
+        width: 100%;
+        filter: grayscale(100%);
+        transition: 2s; }
+        .gridCityTours .tour3 img:hover {
+          filter: none; }
+    .gridCityTours .tour4 {
+      grid-area: tour4;
+      padding: 0 0 2vh 0;
+      margin: 2vh;
+      border: solid 0.1vh #6768ab;
+      border-radius: 0.3em;
+      background-color: #fff;
+      transition: 1s;
+      display: flex;
+      flex-direction: column;
+      justify-self: end; }
+      .gridCityTours .tour4:hover {
+        filter: drop-shadow(0 0.2vh 0.2vh #000); }
+      .gridCityTours .tour4 img {
+        width: 100%;
+        filter: grayscale(100%);
+        transition: 2s; }
+        .gridCityTours .tour4 img:hover {
+          filter: none; }
+    .gridCityTours .tour5 {
+      grid-area: tour5;
+      padding: 0 0 2vh 0;
+      margin: 2vh;
+      border: solid 0.1vh #6768ab;
+      border-radius: 0.3em;
+      background-color: #fff;
+      transition: 1s;
+      display: flex;
+      flex-direction: column;
+      justify-self: center; }
+      .gridCityTours .tour5:hover {
+        filter: drop-shadow(0 0.2vh 0.2vh #000); }
+      .gridCityTours .tour5 img {
+        width: 100%;
+        filter: grayscale(100%);
+        transition: 2s; }
+        .gridCityTours .tour5 img:hover {
+          filter: none; }
+    .gridCityTours .tour6 {
+      grid-area: tour6;
+      padding: 0 0 2vh 0;
+      margin: 2vh;
+      border: solid 0.1vh #6768ab;
+      border-radius: 0.3em;
+      background-color: #fff;
+      transition: 1s;
+      display: flex;
+      flex-direction: column;
+      justify-self: start; }
+      .gridCityTours .tour6:hover {
+        filter: drop-shadow(0 0.2vh 0.2vh #000); }
+      .gridCityTours .tour6 img {
+        width: 100%;
+        filter: grayscale(100%);
+        transition: 2s; }
+        .gridCityTours .tour6 img:hover {
+          filter: none; }
+  /*CONTACTO*/
+  .contactanos {
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 10vh auto 50vh;
+    grid-template-areas: "titulo titulo" "datos formulario" "mapa mapa"; }
+    .contactanos .formulario {
+      width: 60%;
+      margin: 6vw 0; }
+    .contactanos .mapa {
+      width: 100%;
+      height: 100%; }
+  /*FOOTER*/
+  .footerDiv {
+    height: auto;
+    flex-direction: row;
+    justify-content: space-evenly; }
+    .footerDiv .divFooter1 {
+      flex-direction: column;
+      justify-items: start; }
+      .footerDiv .divFooter1 .huasiLogoFooter {
+        height: 5vh;
+        margin-top: 5vw; }
+      .footerDiv .divFooter1 .divFooter1div1 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5vw; }
+    .footerDiv .divFooter2 {
+      display: flex;
+      flex-direction: column; }
+      .footerDiv .divFooter2 .aFooter {
+        transition: 1s;
+        text-decoration: none; }
+        .footerDiv .divFooter2 .aFooter:hover {
+          color: #6768ab; }
+    .footerDiv .divFooter3 {
+      display: flex;
+      flex-direction: column; }
+      .footerDiv .divFooter3 .divFooter3div1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap; }
+        .footerDiv .divFooter3 .divFooter3div1 .redesSocialesLogo {
+          height: 2vh; }
+        .footerDiv .divFooter3 .divFooter3div1 .facebookLogo {
+          margin: 0 1.5vh 0 1.5vh; } }
+
+/*FUENTES*/
+h1 {
+  font-size: 4em; }

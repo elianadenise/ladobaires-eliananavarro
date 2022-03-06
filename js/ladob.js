@@ -65,6 +65,7 @@ class Pasajeros {
 
 const datosPax = new Pasajeros(prompt("Ingrese su nombre completo"),prompt("Ingrese su edad"),prompt("Ingrese su nacionalidad"))
 datosPax.datos()
+console.log(listaDePasajeros)
 
 
 

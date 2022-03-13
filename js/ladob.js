@@ -8,7 +8,7 @@
 
 
 //primer desafio
-/*
+
 let cityTour = prompt("Ingrese el nombre del City Tour elegido");
 let pax = parseInt(prompt("Ingrese el numero de pasajeros"))
 let precio1 = 2499;
@@ -48,7 +48,7 @@ alert(resultado);
 */
 
 //segundo desafio
-/*
+
 const listaDePasajeros = [];
 
 class Pasajeros {
@@ -68,8 +68,8 @@ class Pasajeros {
 const datosPax = new Pasajeros(prompt("Ingrese su nombre completo"),prompt("Ingrese su edad"),prompt("Ingrese su nacionalidad"))
 datosPax.datos()
 console.log(listaDePasajeros)
-*/
-/*
+
+
 const cityTours = [
     {nombre : "misteriosa baires", filtro : "historia"},
     {nombre : "noche de tango", filtro : "tango"},
@@ -79,6 +79,7 @@ const cityTours = [
     {nombre : "subterraneo", filtro : "arte historia"}
 ]
 
+//1er entrega del proyecto final
 const historia = cityTours.filter((el) => el.filtro.includes("historia"))
 const tango = cityTours.filter((el) => el.filtro.includes("tango"))
 const arte = cityTours.filter((el) => el.filtro.includes("arte"))
@@ -86,4 +87,3 @@ const arte = cityTours.filter((el) => el.filtro.includes("arte"))
 console.log(historia)
 console.log(tango)
 console.log(arte)
-*/

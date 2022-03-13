@@ -62,26 +62,32 @@
 
                             .tour1{
                                 grid-area: tour1;
+                                justify-self: end;
                             }
 
                             .tour2{
                                 grid-area: tour2;
+                                justify-self: center;
                             }
 
                             .tour3{
                                 grid-area: tour3;
+                                justify-self: start;
                             }
 
                             .tour4{
                                 grid-area: tour4;
+                                justify-self: end;
                             }
 
                             .tour5{
                                 grid-area: tour5;
+                                justify-self: center;
                             }
 
                             .tour6{
                                 grid-area: tour6;
+                                justify-self: start;
                             }
     }
 
@@ -111,26 +117,32 @@
                             
                             .serv1{
                                 grid-area: serv1;
+                                justify-self: end;
                             }
 
                             .serv2{
                                 grid-area: serv2;
+                                justify-self: center;
                             }
 
                             .serv3{
                                 grid-area: serv3;
+                                justify-self: start;
                             }
 
                             .serv4{
                                 grid-area: serv4;
+                                justify-self: end;
                             }
 
                             .serv5{
                                 grid-area: serv5;
+                                justify-self: center;
                             }
 
                             .serv6{
                                 grid-area: serv6;
+                                justify-self: start;
                             }
     }
 

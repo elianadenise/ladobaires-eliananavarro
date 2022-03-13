@@ -96,7 +96,6 @@ header{
         transition: 1s;
         display: flex;
         flex-direction: column;
-        justify-self: end;
 
         &:hover{
             filter: $sombraImg;                                    
@@ -146,7 +145,6 @@ header{
         transition: 1s;
         display: flex;
         flex-direction: column;
-        justify-self: end;
 
         &:hover{
             filter: $sombraImg;

@@ -1,5 +1,7 @@
 @import "componentes/mixins";
 @import "componentes/variables";
 
-@import "layout/general.scss";
-@import "layout/desktop.scss";
+@import "layout/general";
+@import "layout/desktop";
+@import "layout/tablets";
+@import "layout/mobile";

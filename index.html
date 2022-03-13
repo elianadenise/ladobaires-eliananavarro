@@ -9,6 +9,8 @@
     <meta name="keywords" content="turismo buenos aires, city tour buenos aires, turismo buenos aires argentina, ">
     <meta name="description"
         content="LADOBaires es una Agencia de Viajes que te muestra el lado B de Buenos Aires, Argentina.">
+    <!--icono-->
+    <link rel="icon" href="img/icono.svg">
     <!--bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -18,8 +20,8 @@
     <!--fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amarante&family=Roboto&display=swap" rel="stylesheet">
-    <!--favicon-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Vidaloka&display=swap" rel="stylesheet">
+    <!--icons-->
     <script src="https://kit.fontawesome.com/075ec74296.js" crossorigin="anonymous"></script>
     <!--animacion-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -36,7 +38,7 @@
         <!--navbar-->
         <nav class="navbar navbar-expand-md navbar-light">
             <div class="container-fluid">
-                <a href="index.html"><img src="img/logo.svg" alt="LADOBaires" /></a>
+                <a href="index.html"><img src="img/logo.svg" alt="LADOBaires"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -65,34 +67,38 @@
     <main>
         <!--banner-->
         <div class="banner">
-            <h1 class="mb-5">Te mostramos el lado B de Buenos Aires</h1>
-            <a href="html/tours.html" class="btn">¡QUIERO SABER MÁS!</a>
+            <h1 class="mb-5">¿Querés conocer el Lado B de Buenos Aires?</h1>
+            <a href="#tours" class="btn">¡QUIERO SABER MÁS!</a>
             <!--flecha-->
             <a href="#tours"><i class="fa-solid fa-angles-down fa-3x animate__animated animate__bounce"></i></a>
         </div>
 
         <!--buscador de tours-->
-        <div id="tours" class="gridCityTours">
-            <h2 class="cityTour h2-w">City Tours</h2>
+        <div id="tours" class="cityTours">
+            <h2 class="cityTour">City Tours</h2>
+
+            <!--cards city tours-->
 
             <div class="card tour1" style="width: 18rem;">
-                <img src="img/city1.png" class="card-img-top" alt="...">
+                <img src="img/city1.png" class="card-img-top" alt="Misteriosa Baires">
                 <div class="card-body">
-                    <h3 class="h3--centrado">Misteriosa BAires</h3>
+                    <h3 class="h3--centrado">Misteriosa Baires</h3>
                     <p class="fuente--color-black">Te contamos los secretos porteños mejores guardados.</p>
                     <p class="fuente--color-black">Duración aproximada 5hs.</p>
                     <ul class="fuente--color-black"">
-                        <li>Guía de turismo</li>
-                        <li>Transfer</li>
+                        <li><i class="fa-solid fa-check fa-sm"></i>Guía de turismo</li>
+                        <li><i class="fa-solid fa-check fa-sm"></i>Transfer</li>
                     </ul>
                     <label for=" numerodepasajeros" id="numero" class="texto2">Cantidad de pasajeros</label>
                         <input type="number" id="numero" class="form texto3 mb-3">
-                        <a href="#" class="btn">¡RESERVAR!</a>
+                </div>
+                <div class="card-body">
+                    <a href="#" class="btn">¡RESERVAR!</a>
                 </div>
             </div>
 
             <div class="card tour2" style="width: 18rem;">
-                <img src="img/city2.png" class="card-img-top" alt="...">
+                <img src="img/city2.png" class="card-img-top" alt="Noche de Tango">
                 <div class="card-body">
                     <h3 class="h3--centrado">Noche de tango</h3>
                     <p class="fuente--color-black">¿Querés aprender a bailar tango? En este tour te llevamos a una de
@@ -100,51 +106,57 @@
                         Buenos Aires.</p>
                     <p class="fuente--color-black">Duración aproximada 4hs.</p>
                     <ul class="fuente--color-black">
-                        <li>Guía de turismo</li>
-                        <li>Profesor de tango</li>
-                        <li>Entrada incluida</li>
-                        <li>Transfer</li>
+                        <li><i class="fa-solid fa-check fa-sm"></i>Guía de turismo</li>
+                        <li><i class="fa-solid fa-check fa-sm"></i>Profesor de tango</li>
+                        <li><i class="fa-solid fa-check fa-sm"></i>Entrada incluida</li>
+                        <li><i class="fa-solid fa-check fa-sm"></i>Transfer</li>
                     </ul>
                     <label for="numerodepasajeros" id="numero" class="texto2">Cantidad de pasajeros</label>
                     <input type="number" id="numero" class="form texto3 mb-3">
+                </div>
+                <div class="card-body">
                     <a href="#" class="btn">¡RESERVAR!</a>
                 </div>
             </div>
 
             <div class="card tour3" style="width: 18rem;">
-                <img src="img/city3.png" class="card-img-top" alt="...">
+                <img src="img/city3.png" class="card-img-top" alt="Arquitectura Porteña">
                 <div class="card-body">
-                    <h3 class="h3--centrado">Arquitectura porteña</h3>
+                    <h3 class="h3--centrado">Arquitectura Porteña</h3>
                     <p class="fuente--color-black">Desde casas coloniales hasta Clorindo Testa.</p>
                     <p class="fuente--color-black">Duración aproximada 6hs.</p>
                     <ul class="fuente--color-black">
-                        <li>Guía de turismo</li>
-                        <li>Transfer</li>
+                        <li><i class="fa-solid fa-check fa-sm"></i>Guía de turismo</li>
+                        <li><i class="fa-solid fa-check fa-sm"></i>Transfer</li>
                     </ul>
                     <label for="numerodepasajeros" id="numero" class="texto2">Cantidad de pasajeros</label>
                     <input type="number" id="numero" class="form texto3 mb-3">
+                </div>
+                <div class="card-body">
                     <a href="#" class="btn">¡RESERVAR!</a>
                 </div>
             </div>
 
             <div class="card tour4" style="width: 18rem;">
-                <img src="img/city4.png" class="card-img-top" alt="...">
+                <img src="img/city4.png" class="card-img-top" alt="Arte Urbano">
                 <div class="card-body">
                     <h3 class="h3--centrado">Arte urbano</h3>
                     <p class="fuente--color-black">Te llevamos a los distritos artísticos de Buenos Aires</p>
                     <p class="fuente--color-black">Duración aproximada 6hs.</p>
                     <ul class="fuente--color-black">
-                        <li>Guía de turismo</li>
-                        <li>Transfer</li>
+                        <li><i class="fa-solid fa-check fa-sm"></i>Guía de turismo</li>
+                        <li><i class="fa-solid fa-check fa-sm"></i>Transfer</li>
                     </ul>
                     <label for="numerodepasajeros" id="numero" class="texto2">Cantidad de pasajeros</label>
                     <input type="number" id="numero" class="form texto3 mb-3">
+                </div>
+                <div class="card-body">
                     <a href="#" class="btn">¡RESERVAR!</a>
                 </div>
             </div>
 
             <div class="card tour5" style="width: 18rem;">
-                <img src="img/city5.png" class="card-img-top" alt="...">
+                <img src="img/city5.png" class="card-img-top" alt="Tango en la calle">
                 <div class="card-body">
                     <h3 class="h3--centrado">Tango en la calle</h3>
                     <p class="fuente--color-black">¿Querés aprender a bailar tango? En este tour te llevamos a una de
@@ -152,12 +164,14 @@
                         Buenos Aires.</p>
                     <p class="fuente--color-black">Duración aproximada 4hs.</p>
                     <ul class="fuente--color-black">
-                        <li>Guía de turismo</li>
-                        <li>Profesor de tango</li>
-                        <li>Transfer</li>
+                        <li><i class="fa-solid fa-check fa-sm"></i> Guía de turismo</li>
+                        <li><i class="fa-solid fa-check fa-sm"></i>Profesor de tango</li>
+                        <li><i class="fa-solid fa-check fa-sm"></i>Transfer</li>
                     </ul>
                     <label for="numerodepasajeros" id="numero" class="texto2">Cantidad de pasajeros</label>
                     <input type="number" id="numero" class="form texto3 mb-3">
+                </div>
+                <div class="card-body">
                     <a href="#" class="btn">¡RESERVAR!</a>
                 </div>
             </div>
@@ -172,17 +186,77 @@
                     </p>
                     <p class="fuente--color-black">Duración aproximada 3hs.</p>
                     <ul class="fuente--color-black">
-                        <li>Guía de turismo</li>
-                        <li>Pasajes incluidos</li>
-                        <li>Transfer</li>
+                        <li><i class="fa-solid fa-check fa-sm"></i>Guía de turismo</li>
+                        <li><i class="fa-solid fa-check fa-sm"></i>Pasajes incluidos</li>
+                        <li><i class="fa-solid fa-check fa-sm"></i>Transfer</li>
                     </ul>
                     <label for="numerodepasajeros" id="numero" class="texto2">Cantidad de pasajeros</label>
                     <input type="number" id="numero" class="form texto3 mb-3">
+                </div>
+                <div class="card-body">
                     <a href="#" class="btn">¡RESERVAR!</a>
                 </div>
             </div>
 
         </div>
+
+        <!--que ofrecemos-->
+
+        <div class="servicios">
+            <h2 class="servicio">¿Qué es lo que te ofrecemos?</h2>
+
+            <!--cards servicios-->
+
+            <div class="card text-center serv1" style="width: 18rem;">
+                <div class="card-body">
+                    <i class="fa-solid fa-star fa-2xl"></i>
+                    <h5 class="card-title">Servicios de calidad</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                </div>
+            </div>
+
+            <div class="card text-center serv2" style="width: 18rem;">
+                <div class="card-body">
+                    <i class="fa-solid fa-user fa-2xl"></i>
+                    <h5 class="card-title">Tours exclusivos</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                </div>
+            </div>
+
+            <div class="card text-center serv3" style="width: 18rem;">
+                <div class="card-body">
+                    <i class="fa-solid fa-users fa-2xl"></i>
+                    <h5 class="card-title">Tours grupales</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                </div>
+            </div>
+
+            <div class="card text-center serv4" style="width: 18rem;">
+                <div class="card-body">
+                    <i class="fa-regular fa-calendar-check fa-2xl"></i>
+                    <h5 class="card-title">Seguros</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                </div>
+            </div>
+
+            <div class="card text-center serv5" style="width: 18rem;">
+                <div class="card-body">
+                    <i class="fa-solid fa-bullhorn fa-2xl"></i>
+                    <h5 class="card-title">Guías especializados</h5>
+                    <p class="card-text">Encontrá guías que hablan en tu idioma (incluido en lengua de señas).</p>
+                </div>
+            </div>
+
+            <div class="card text-center serv6" style="width: 18rem;">
+                <div class="card-body">
+                    <i class="fa-solid fa-bus-simple fa-2xl"></i>
+                    <h5 class="card-title">Traslados</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                </div>
+            </div>
+
+        </div>
+
 
         <!--nosotros-->
         <div id="nosotros" class="nosotros">
@@ -191,13 +265,57 @@
                 ullam. Sit sunt corporis eius iste eveniet magnam deleniti eum cupiditate, doloribus accusantium
                 atque
                 harum doloremque!</p>
+
+            <!--galeria-->
+            <div id="carouselExampleCaptions"
+                class="carousel slide galeria justify-content-center container mb-5 align-items-center"
+                data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/galeria1.png" class="d-block w-100" alt="Bus turístico">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/galeria2.png" class="d-block w-100" alt="Guiada en proceso">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/galeria3.png" class="d-block w-100" alt="La Boca">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
 
         <!--contactanos-->
         <div id="contactanos" class="contactanos">
 
+            <!--titulo-->
+
             <h2 class="titulo h2-w">Contactanos</h2>
 
+            <!--formulario-->
             <div class="formulario">
 
                 <label for="text" id="Nombre" class="fuente--color-white mb-1">Nombre y apellido</label>
@@ -229,53 +347,41 @@
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
                             value="option2">
-                        <label class="form-check-label fuente--color-white" for="inlineRadio2">En otro momento</label>
+                        <label class="form-check-label fuente--color-white" for="inlineRadio2">En otro
+                            momento</label>
                     </div>
                 </div>
 
                 <input type="submit" class="btn" value="¡enviar!">
             </div>
 
-            <div class="datos fuente--color-white">
-                <div class="datos--flex-row">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p>Buenos Aires, Argentina.</p>
-                </div>
-                <div class="datos--flex-row">
-                    <i class="fa-solid fa-phone"></i>
-                    <p>Tel.: 4444 2222</p>
-                </div>
-                <div class="datos--flex-row">
-                    <i class="fa-regular fa-envelope"></i>
-                    <p>hola@ladobaires.com</p>
-                </div>
-                <div class="datos--flex-row">
-                    <i class="fa-regular fa-clock"></i>
-                    <div class="datos--flex-column">
-                        <p>Horarios de atención:</p>
-                        <p>Lunes a viernes de 9hs a 19hs</p>
-                        <p>Sábados de 9hs a 14hs</p>
-                    </div>
-                </div>
-                <div class="datos--flex-column">
-                    <p>Sigamos conectados</p>
-                    <div class="datos--flex-row">
-                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram redesSocialesLogo mb-2""></i></a>
-                        <a href=" https://www.facebook.com"><i
-                                    class="fa-brands fa-facebook-f redesSocialesLogo facebookLogo mb-2"></i></a>
-                        <a href="https://www.whatsapp.com/?lang=es"><i
-                                class="fa-brands fa-whatsapp redesSocialesLogo mb-2"></i></a>
-                    </div>
+            <!--datos-->
 
-                </div>
+            <i class="icon1 fa-solid fa-location-dot"></i>
+            <p class="datos1 fuente--color-white">Buenos Aires, Argentina.</p>
 
+            <i class="icon2 fa-solid fa-phone"></i>
+            <p class="datos2 fuente--color-white">Tel.: 4444 2222</p>
 
+            <i class="icon3 fa-regular fa-envelope"></i>
+            <p class="datos3 fuente--color-white">hola@ladobaires.com</p>
+
+            <i class="icon4 fa-regular fa-clock"></i>
+            <p class="datos4 fuente--color-white">Lunes a sábados de 9hs a 19hs</p>
+
+            <div class="datos--flex-row redes">
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-lg fa-instagram redesSocialesLogo mb-2""></i></a>
+                <a href=" https://www.facebook.com"><i
+                            class="fa-brands fa-lg fa-facebook-f redesSocialesLogo facebookLogo mb-2"></i></a>
+                <a href="https://www.whatsapp.com/?lang=es"><i
+                        class="fa-brands fa-lg fa-whatsapp redesSocialesLogo mb-2"></i></a>
             </div>
+
+            <!--mapa-->
 
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210146.68168877432!2d-58.573383207134555!3d-34.615743688997895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses!2sar!4v1645738807069!5m2!1ses!2sar"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="mapa"></iframe>
-
 
         </div>
 
@@ -285,7 +391,8 @@
         <div class="suscripcion">
             <p class="fuente--color-black">Suscríbete para recibir descuentos exclusivos</p>
             <div>
-                <input type="text" placeholder="ejemplo@ejemplo.com" id="correo" class="form fuente__form mb-3 suscripcion__email">
+                <input type="text" placeholder="ejemplo@ejemplo.com" id="correo"
+                    class="form fuente__form mb-3 suscripcion__email">
                 <input type="submit" class="btn" value="¡enviar!">
             </div>
         </div>
@@ -316,11 +423,12 @@
             <div class="divFooter3">
                 <p class="fuente--color-black m-0">Sigamos conectados</p>
                 <div class="divFooter3div1">
-                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram redesSocialesLogo mb-2""></i></a>
+                    <a href="https://www.instagram.com/"><i
+                            class="fa-brands fa-lg fa-instagram redesSocialesLogo mb-0"></i></a>
                     <a href=" https://www.facebook.com"><i
-                                class="fa-brands fa-facebook-f redesSocialesLogo facebookLogo mb-2"></i></a>
+                            class="fa-brands fa-lg fa-facebook-f redesSocialesLogo facebookLogo mb-0"></i></a>
                     <a href="https://www.whatsapp.com/?lang=es"><i
-                            class="fa-brands fa-whatsapp redesSocialesLogo mb-2"></i></a>
+                            class="fa-brands fa-lg fa-whatsapp redesSocialesLogo mb-0"></i></a>
                 </div>
 
                 <div class="divLinealFooter2"></div>
@@ -330,12 +438,17 @@
             </div>
         </div>
 
+        <!--créditos-->
 
-
-
+        <div class="credito">
+            <p class="fuente--color-white">Desarrollado por Eliana Navarro</p>
+            <div>
+                <a href="https://www.linkedin.com/in/elianadnavarro/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/elianadenise"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
 
     </footer>
-
 
 </body>
 

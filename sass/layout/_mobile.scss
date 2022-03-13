@@ -1,0 +1,165 @@
+/*MEDIA QUERY - MOBILE*/
+@media screen and (min-width: 0px) and (max-width: 599px){
+
+    header{
+        position:relative;
+        flex-direction: column;
+        justify-items: center;
+        padding: 1rem;
+    
+        .navbar{
+            width:100%;
+    
+            img{
+                justify-content: center;
+                margin: 0.1vh 0;
+            }
+        
+            ul{
+                flex-direction: center;
+                align-items: center;
+                height: 15vh;
+                line-height: 1em;
+                
+                .linknav{
+                    padding:0.5vh 0.5vh;
+                    font-size: 1em;
+                }
+            }
+        }  
+    }
+
+    /*MAIN*/
+    main{
+        padding-top: 0vh;
+    }
+
+    /*BANNER*/
+    .banner{
+        height: 50vh;
+
+        i{
+            position: relative;
+            bottom: 0;
+            right: 0;
+            color: transparent;
+        }
+    }
+
+    /*CITY TOURS*/
+
+    .cityTours{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .tour1{
+            margin: 0 0 2vh 0;
+        }
+
+        .tour2, .tour3, .tour4, .tour5{
+            margin: 1vh 0 2vh 0;
+        }
+
+        .tour6{
+            margin: 1vh 0 5vh 0;
+        }
+    }
+
+    /*SERVICIOS*/
+
+    .servicios{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .serv1{
+            margin: 0 0 2vh 0;
+        }
+
+        .serv2, .serv3, .serv4, .serv5{
+            margin: 1vh 0 2vh 0;
+        }
+
+        .serv6{
+            margin: 1vh 0 5vh 0;
+        }
+    }
+
+    /*CONTACTO*/
+    .contactanos{
+        grid-template-columns: 35% 65%;
+        grid-template-rows: 20vh auto 5vh 5vh 5vh 5vh 15vh 40vh;
+        grid-template-areas: "titulo titulo"
+                             "formulario formulario"
+                             "icon1 dato1"
+                             "icon2 dato2"
+                             "icon3 dato3"
+                             "icon4 dato4"
+                             "redes redes"
+                             "mapa mapa";
+
+                            .formulario{
+                                margin-bottom: 10vh;
+                                width: 80%;
+                            }
+    }
+
+    /*FOOTER*/
+
+    .footerDiv{
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-evenly;
+        padding:3vh 0;
+    
+        .divFooter1{
+            flex-direction: column;
+            justify-items: space-between;
+            justify-items: center;
+            align-items: center;
+    
+            .logo{
+                height: 5vh;
+                margin-top: 5vw;
+            }
+    
+            .divFooter1div1{
+                justify-items: space-around;
+                flex-direction: column;
+                justify-items: center;
+                align-items:center;
+                margin-bottom: 3vh;
+            }
+        }
+    
+        .divFooter2{
+            justify-items: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    
+        .divFooter3{
+            justify-items: center;
+            align-items: center;
+            justify-items: space-between;
+            padding: 0 3%;
+            margin-top: 3vh;
+            margin-bottom: 5vh;
+
+            .redesSocialesLogo{
+                height: 2vh;
+            }
+            
+            .facebookLogo{
+                margin: 0 1.5vh 0 1.5vh;
+            }
+        }
+    }
+
+
+
+}

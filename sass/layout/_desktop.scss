@@ -1,0 +1,231 @@
+/*MEDIA QUERY - DESKTOP*/
+@media screen and (min-width: 769px){
+
+    /*HEADER + NAV*/
+    
+    header{
+        height: 8vh; 
+        position: fixed;
+        flex-direction: row;
+    
+        .navbar{
+            width: 100%;
+            
+            .linknav{
+                padding:0.5vh 0.5vh;
+                font-size: 1em;
+            }
+        }
+    }
+
+    /*MAIN*/
+    main{
+        padding-top: 8vh;
+    }
+
+    /*BANNER*/
+    .banner{
+        height: 92vh;
+
+        i{
+            position:absolute;
+            bottom: 10vh;
+            right: 10vw;
+            color: #fff;
+    
+            &:hover{
+                color:#6768ab
+            }
+        }
+    }
+
+    /*CITY TOURS*/
+    .cityTours{
+        display: grid;
+        height: 100%;
+        width: 100%;
+        row-gap: 0vh;
+        justify-content: space-around;
+        row-gap: 5vw;
+        column-gap: 1vh;
+        padding-bottom: 10vh;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 20vh auto auto;
+        grid-template-areas: "tour tour tour"
+                             "tour1 tour2 tour3"
+                             "tour4 tour5 tour6";
+
+                            .cityTour{
+                                grid-area: tour;
+                                margin: 10vh 0 0 0;
+                            }
+
+                            .tour1{
+                                grid-area: tour1;
+                            }
+
+                            .tour2{
+                                grid-area: tour2;
+                            }
+
+                            .tour3{
+                                grid-area: tour3;
+                            }
+
+                            .tour4{
+                                grid-area: tour4;
+                            }
+
+                            .tour5{
+                                grid-area: tour5;
+                            }
+
+                            .tour6{
+                                grid-area: tour6;
+                            }
+    }
+
+
+    /*QUE OFRECEMOS*/
+
+    .servicios{
+        display: grid;
+        height: 100%;
+        width: 100%;
+        background-color: #fff;
+        row-gap: 0vh;
+        justify-content: space-around;
+        row-gap: 5vw;
+        column-gap: 1vh;
+        padding-bottom: 10vh;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 20vh auto auto;
+        grid-template-areas: "serv serv serv"
+                             "serv1 serv2 serv3"
+                             "serv4 serv5 serv6";
+
+                            .servicio{
+                                grid-area: serv;
+                                margin: 10vh 0 0 0;
+                            }
+                            
+                            .serv1{
+                                grid-area: serv1;
+                            }
+
+                            .serv2{
+                                grid-area: serv2;
+                            }
+
+                            .serv3{
+                                grid-area: serv3;
+                            }
+
+                            .serv4{
+                                grid-area: serv4;
+                            }
+
+                            .serv5{
+                                grid-area: serv5;
+                            }
+
+                            .serv6{
+                                grid-area: serv6;
+                            }
+    }
+
+
+    /*CONTACTO*/
+
+    .contactanos{
+        grid-template-columns: 15% 15% 70%;
+        grid-template-rows: 30vh 10vh 10vh 10vh 10vh 30vh 50vh;
+        grid-template-areas: "titulo titulo titulo"
+                             "icon1 dato1 formulario"
+                             "icon2 dato2 formulario"
+                             "icon3 dato3 formulario"
+                             "icon4 dato4 formulario"
+                             "redes redes formulario"
+                             "mapa mapa mapa";
+
+                            .titulo{
+                                margin: 0 0 0 5vh;
+                            }
+
+                            .formulario{
+                                width: 60%;
+                            }
+
+                            .redes{
+                                margin-left: 15vh;
+                            }
+    }
+
+
+    /*FOOTER*/
+    .footerDiv{
+        height: auto;
+        flex-direction: row;
+        justify-content: space-evenly;
+    
+        .divFooter1{
+            flex-direction: column;
+            justify-items: start;
+    
+            .logo{
+                height: 5vh;
+                margin-top: 5vw;
+            }
+    
+            .divFooter1div1{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 5vw;
+            }
+        }
+    
+        .divFooter2{
+            display: flex;
+            flex-direction: column;
+            
+            .aFooter{
+                transition: 1s;
+                text-decoration: none;
+    
+                &:hover{
+                    color: #6768ab;
+                }
+            }
+        }
+    
+        .divFooter3{
+            display: flex;
+            flex-direction: column;
+    
+            .divFooter3div1{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+    
+                .redesSocialesLogo{
+                    height: 2vh;
+                }
+                
+                .facebookLogo{
+                    margin: 0 1.5vh 0 1.5vh;
+                }
+            }
+        }
+    }
+
+
+/*FUENTES*/
+h1{
+    font-size: 4em;
+}
+
+h3{
+    font-size: 1.3em;
+}
+
+}

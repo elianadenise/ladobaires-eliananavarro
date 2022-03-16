@@ -59,6 +59,32 @@ class Pasajeros {
     }
 }
 
+
+/*
+const datosPax = new Pasajeros(prompt("Ingrese su nombre completo"),prompt("Ingrese su edad"),prompt("Ingrese su nacionalidad"))
+datosPax.datos()
+console.log(listaDePasajeros)*/
+
+
+const cityTours = [
+    {id: 1, nombre : "misteriosa baires", desc: "Te contamos los secretos porteños mejores guardados.", precio: 2499, filtro : "historia"},
+    {id: 2, nombre : "noche de tango", desc: "¿Querés aprender a bailar tango? En este tour te llevamos a una de las milongas más conocidas de Buenos Aires.", precio: 3499, filtro : "tango"},
+    {id: 3, nombre : "arquitectura porteña", desc: "Desde casas coloniales hasta Clorindo Testa.", precio: 3499, filtro : "arte historia"},
+    {id: 4, nombre : "arte urbano", desc: "Te llevamos a los distritos artísticos de Buenos Aires", precio: 3499, filtro : "arte historia"},
+    {id: 5, nombre : "tango en la calle",  desc: "¿Querés aprender a bailar tango? Te proponemos vivirlo desde las calles de La Boca y San Telmo", precio: 3499, filtro : "tango"},
+    {id: 6, nombre : "subterraneo", desc: "La red de subterráneos porteños cuenta con estaciones llenas de arte, en este tour te las mostramos", precio: 2499, filtro : "arte historia"}
+]
+
+//1er entrega del proyecto final
+const historia = cityTours.filter((el) => el.filtro.includes("historia"))
+const tango = cityTours.filter((el) => el.filtro.includes("tango"))
+const arte = cityTours.filter((el) => el.filtro.includes("arte"))
+
+console.log(historia)
+console.log(tango)
+console.log(arte)
+
+//tercer desafio - DOM
 function datosPax(){
     let cantidadPax = parseInt(prompt("Ingrese la cantidad de pasajeros"))
     for(let i = 0; i < cantidadPax; i++){
@@ -90,29 +116,3 @@ const completarDatos = (pasajeros) => {
 }
 
 datosPax();
-
-/*
-const datosPax = new Pasajeros(prompt("Ingrese su nombre completo"),prompt("Ingrese su edad"),prompt("Ingrese su nacionalidad"))
-datosPax.datos()
-console.log(listaDePasajeros)*/
-
-
-const cityTours = [
-    {id: 1, nombre : "misteriosa baires", desc: "Te contamos los secretos porteños mejores guardados.", precio: 2499, filtro : "historia"},
-    {id: 2, nombre : "noche de tango", desc: "¿Querés aprender a bailar tango? En este tour te llevamos a una de las milongas más conocidas de Buenos Aires.", precio: 3499, filtro : "tango"},
-    {id: 3, nombre : "arquitectura porteña", desc: "Desde casas coloniales hasta Clorindo Testa.", precio: 3499, filtro : "arte historia"},
-    {id: 4, nombre : "arte urbano", desc: "Te llevamos a los distritos artísticos de Buenos Aires", precio: 3499, filtro : "arte historia"},
-    {id: 5, nombre : "tango en la calle",  desc: "¿Querés aprender a bailar tango? Te proponemos vivirlo desde las calles de La Boca y San Telmo", precio: 3499, filtro : "tango"},
-    {id: 6, nombre : "subterraneo", desc: "La red de subterráneos porteños cuenta con estaciones llenas de arte, en este tour te las mostramos", precio: 2499, filtro : "arte historia"}
-]
-
-//1er entrega del proyecto final
-const historia = cityTours.filter((el) => el.filtro.includes("historia"))
-const tango = cityTours.filter((el) => el.filtro.includes("tango"))
-const arte = cityTours.filter((el) => el.filtro.includes("arte"))
-
-console.log(historia)
-console.log(tango)
-console.log(arte)
-
-//tercer desafio - DOM

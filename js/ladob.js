@@ -6,16 +6,13 @@
 - tango en la calle
 - subterraneo*/
 
-
 //primer desafio
-
 let cityTour = prompt("Ingrese el nombre del City Tour elegido");
 let pax = parseInt(prompt("Ingrese el numero de pasajeros"))
 let precio1 = 2499;
 let precio2 = 3499;
 
 //Enzo, lo comenté porque sinó no me anda el prompt de más abajo
-
 /*
 function cotizacion(cityTour, pax){
     if (cityTour == "misteriosa buenos aires"){
@@ -39,32 +36,26 @@ function cotizacion(cityTour, pax){
     }else{
         alert(`El City Tour ingresado no es válido`);
     }
-
     return resultado
 }
-
 cotizacion(cityTour, pax);
 alert(resultado);
 */
 
 //segundo desafio
-
 const listaDePasajeros = [];
-
 class Pasajeros {
     constructor (nombre, edad, nacionalidad) {
         this.nombre = nombre.toUpperCase();
-        this.edad = parseInt(edad); 
+        this.edad = parseInt(edad);
         this.nacionalidad = nacionalidad.toUpperCase();
     }
 }
-
 
 /*
 const datosPax = new Pasajeros(prompt("Ingrese su nombre completo"),prompt("Ingrese su edad"),prompt("Ingrese su nacionalidad"))
 datosPax.datos()
 console.log(listaDePasajeros)*/
-
 
 const cityTours = [
     {id: 1, nombre : "misteriosa baires", desc: "Te contamos los secretos porteños mejores guardados.", precio: 2499, filtro : "historia"},
@@ -79,7 +70,6 @@ const cityTours = [
 const historia = cityTours.filter((el) => el.filtro.includes("historia"))
 const tango = cityTours.filter((el) => el.filtro.includes("tango"))
 const arte = cityTours.filter((el) => el.filtro.includes("arte"))
-
 console.log(historia)
 console.log(tango)
 console.log(arte)
@@ -91,28 +81,33 @@ function datosPax(){
         const nombre = prompt(`Ingrese su nombre completo del ${i+1}° pasajero`);
         const edad = parseInt(prompt("Ingrese su edad"));
         const nacionalidad = prompt("Ingrese su nacionalidad");
-
         const datosPax = new Pasajeros(nombre, edad, nacionalidad)
         listaDePasajeros.push(datosPax);
-
         completarDatos(listaDePasajeros)
-
     }
-
 }
-
 const completarDatos = (pasajeros) => {
-
     const tbody = document.querySelector("tbody")
     for (const pasajero of listaDePasajeros){
         const tr = document.createElement("tr");
-
         tr.innerHTML = `<td>${pasajero.nombre}</td>
                         <td>${pasajero.edad}</td>
                         <td>${pasajero.nacionalidad}</td>`
-        
         tbody.appendChild(tr)
     }
 }
-
 datosPax();
+
+//cuarto desafio - Eventos
+const inputNombre = document.getElementById("nombre");
+const inputEmail = document.getElementById("email");
+const inputSelect = document.getElementById("select");
+const inputComentario = document.getElementById("comentario");
+
+const formulario = document.getElementById("form");
+
+formulario.addEventListener("submit", (e) => {
+    console.log(`Formulario enviado con los siguientes datos: La persona ${inputNombre} con e-mail ${inputEmail} ha comentado bajo el asunto ${inputSelect} lo siguiente ${inputComentario}`);
+    alert("Formulario enviado");
+    e.preventDefault();
+});

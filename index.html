@@ -332,13 +332,13 @@
             <h2 class="titulo h2-w">Contactanos</h2>
 
             <!--formulario-->
-            <div class="formulario">
+            <div id="form" class="formulario">
 
-                <label for="text" id="Nombre" class="fuente--color-white mb-1">Nombre y apellido</label>
-                <input type="text" placeholder="Ingresá tu nombre" id="Nombre" class="form fuente__form mb-3">
+                <label for="text" id="nombre" class="fuente--color-white mb-1">Nombre y apellido</label>
+                <input type="text" placeholder="Ingresá tu nombre" id="nombre" class="form fuente__form mb-3">
 
-                <label for="text" id="correo" class="fuente--color-white mb-1">Correo Electrónico</label>
-                <input type="text" placeholder="ejemplo@ejemplo.com" id="correo" class="form fuente__form mb-3">
+                <label for="text" id="email" class="fuente--color-white mb-1">Correo Electrónico</label>
+                <input type="text" placeholder="ejemplo@ejemplo.com" id="email" class="form fuente__form mb-3">
 
                 <label for="tipodehabitación" id="select" class="fuente--color-white mb-1">Asunto</label>
                 <select name="select" class="mb-3 fuente__form">
@@ -348,7 +348,7 @@
                     <option value="Otro">Otro</option>
                 </select>
 
-                <label for="exampleFormControlTextarea1" class="fuente--color-white mb-1">Comentario</label>
+                <label for="exampleFormControlTextarea1" id="comentario" class="fuente--color-white mb-1">Comentario</label>
                 <textarea cols="70" rows="5" class="mb-3 fuente__form"></textarea>
 
                 <div class="radios mb-3">
@@ -404,14 +404,6 @@
     </main>
 
     <footer>
-        <div class="suscripcion">
-            <p class="fuente--color-black">Suscríbete para recibir descuentos exclusivos</p>
-            <div>
-                <input type="text" placeholder="ejemplo@ejemplo.com" id="correo"
-                    class="form fuente__form mb-3 suscripcion__email">
-                <input type="submit" class="btn" value="¡enviar!">
-            </div>
-        </div>
         <div class="footerDiv">
             <!--seccion1-->
             <div class="divFooter1 m-0">

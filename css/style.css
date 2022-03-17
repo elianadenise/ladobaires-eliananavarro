@@ -237,19 +237,6 @@ header {
       color: #6768ab; }
 
 /*FOOTER*/
-.suscripcion {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 20vh; }
-  .suscripcion div {
-    display: flex;
-    flex-direction: row; }
-  .suscripcion .suscripcion__email {
-    width: 50vw;
-    height: 5vh; }
-
 .footerDiv {
   background-color: #fff;
   width: 100%;

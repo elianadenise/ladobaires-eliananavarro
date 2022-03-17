@@ -107,7 +107,7 @@ const inputComentario = document.getElementById("comentario");
 const formulario = document.getElementById("form");
 
 formulario.addEventListener("submit", (e) => {
-    console.log(`Formulario enviado con los siguientes datos: La persona ${inputNombre} con e-mail ${inputEmail} ha comentado bajo el asunto ${inputSelect} lo siguiente ${inputComentario}`);
-    alert("Formulario enviado");
     e.preventDefault();
+    console.log(`Formulario enviado con los siguientes datos: La persona ${inputNombre.value} con e-mail ${inputEmail.value} ha comentado bajo el asunto ${inputSelect.value} lo siguiente ${inputComentario.value}`);
+    alert("Formulario enviado");
 });
